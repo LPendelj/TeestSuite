@@ -15,8 +15,15 @@ public class FormsPage {
     @FindBy(id = "item-0")
     WebElement practiceForm;
 
+    @FindBy(css = ".header-right")
+    WebElement alerts;
+
 
     public WebElement getPracticeForm() {
         return practiceForm;
+    }
+
+    public WebElement getAlerts() {
+        return alerts;
     }
 }

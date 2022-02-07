@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.awt.*;
+import java.util.List;
 
 public class FormsTest extends BasePage {
 
@@ -16,9 +17,9 @@ public class FormsTest extends BasePage {
     public void setUpPage() throws InterruptedException, AWTException {
        // driver.navigate().to("https://demoqa.com/elements");
 
-        homePage.getForms().click();
-        // wdw.wait(2000);
+        List<WebElement> elementsList = driver.findElements(By.className("card-up"));
 
+        elementsList.get(1).click();
 
         Thread.sleep(2000);
 

@@ -18,6 +18,9 @@ public class HomePage {
     }
 
 
+
+
+
     @FindBy(className = "card-up")
     WebElement elements;
 
@@ -26,7 +29,6 @@ public class HomePage {
 
     @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div[3]/div/div[1]")
     WebElement windows;
-
 
 
 
@@ -53,4 +55,6 @@ public class HomePage {
     public WebElement getWindows() {
         return windows;
     }
+
+
 }

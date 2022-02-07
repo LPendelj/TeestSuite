@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.List;
 
 public class ElementsTest extends BasePage {
     public static void zoomOut() throws AWTException {
@@ -35,8 +36,9 @@ public class ElementsTest extends BasePage {
     public void setUpPage() throws InterruptedException, AWTException, IOException {
         //driver.navigate().to("https://demoqa.com/elements");
 
-        homePage.getElements().click();
-       // wdw.wait(2000);
+        List<WebElement> elementsList = driver.findElements(By.className("card-up"));
+
+        elementsList.get(0).click();
 
 
         Thread.sleep(2000);
