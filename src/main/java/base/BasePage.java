@@ -20,6 +20,8 @@ public class BasePage {
    public TextBoxPage textBoxPage;
    public FormsPage formsPage;
    public CheckBox checkBox;
+   public LibraryPage libraryPage;
+   public WidgetsPage widgetsPage;
 
     @BeforeClass
     public void setUp() throws IOException {
@@ -33,6 +35,9 @@ public class BasePage {
         textBoxPage = new TextBoxPage(driver);
         formsPage = new FormsPage(driver);
         checkBox = new CheckBox(driver);
+        libraryPage = new LibraryPage(driver);
+        widgetsPage = new WidgetsPage(driver);
+
 
 
         ExcelReader er = new ExcelReader("C:\\Users\\Acer\\IdeaProjects\\QaProjekat\\src\\main\\resources\\Data.xlsx");
