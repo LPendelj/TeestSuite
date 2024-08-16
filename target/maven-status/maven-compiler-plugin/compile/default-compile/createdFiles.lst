@@ -1,0 +1,16 @@
+page\WidgetsPage.class
+test\WindowsTest.class
+base\ExcelReader.class
+test\ElementsTest.class
+page\LibraryPage.class
+test\WidgetsTest.class
+page\FormsPage.class
+base\BasePage.class
+page\ElementsPage.class
+test\BookStoreTest.class
+test\FormsTest.class
+page\HomePage.class
+test\InteractionTest.class
+test\LibraryTest.class
+page\TextBoxPage.class
+page\CheckBox.class
